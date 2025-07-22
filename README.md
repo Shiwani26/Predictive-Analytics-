@@ -55,9 +55,8 @@ print(data.describe())
 
   Now let's visualize the distribution of these variables:
   
-  ``` # visualization of the distribution
-import matplotlib.pyplot as plt
-numeric_cols = ['Age', 'Purchase Amount (USD)','Review Rating', 'Previous Purchases']
+  ``` import matplotlib.pyplot as plt
+  numeric_cols = ['Age', 'Purchase Amount (USD)','Review Rating', 'Previous Purchases']
 plt.figure(figsize=(15,20))
 
 for i, col in enumerate(numeric_cols, 1):
@@ -66,11 +65,10 @@ for i, col in enumerate(numeric_cols, 1):
     plt.title(f'Distribution of {col}')
     plt.xlabel(col)
     plt.ylabel('Frequency')
+    plt.tight_layout()
+    plt.show() ```
 
-plt.tight_layout()
-plt.show() ```
-
-  ............  distribution figure
+  distribution figure
 
 ## Some Key Observations:
 
@@ -78,6 +76,8 @@ plt.show() ```
 * Purchase amount (USD) is fairly uniform but slightly right-skewed, indicating a broad range of spending behaviors, with a small concentration of customers making higher-value purchases near $100.
 * Review ratings are widely spread between 2.5 and 5, with visible peaks around whole number ratings like 3, 4, and 4.5. This suggests mixed customer satisfaction, though the frequent high scores hint at generally favorable experiences.
 * Previous purchases are distributed with variability but show consistent activity across the board, with some customers having made up to 50 purchases, indicating strong return customer behavior in some segments.
+
+  
 Now, we’ll create segments based on age, gender, and customer satisfaction. First, let’s analyse across different age groups and genders:
 
 ### Age-Based Analysis
