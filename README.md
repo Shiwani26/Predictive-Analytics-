@@ -58,7 +58,6 @@ print(data.describe())
   ``` import matplotlib.pyplot as plt
   numeric_cols = ['Age', 'Purchase Amount (USD)','Review Rating', 'Previous Purchases']
 plt.figure(figsize=(15,20))
-
 for i, col in enumerate(numeric_cols, 1):
     plt.subplot(5, 2, i)
     plt.hist(df[col], bins=20, edgecolor='k', alpha=0.7)
@@ -66,7 +65,8 @@ for i, col in enumerate(numeric_cols, 1):
     plt.xlabel(col)
     plt.ylabel('Frequency')
     plt.tight_layout()
-    plt.show() ```
+    plt.show() 
+    ```
 
   distribution figure
 
