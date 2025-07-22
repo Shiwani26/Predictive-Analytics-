@@ -53,20 +53,29 @@ print(data.describe())
 * Review Rating: Average is 3.75/5.
 * Previous Purchases: Average of 25, indicating repeat buying behavior.
 
-  Now let's visualize the distribution of these variables:
+  Now, let's visualize the distribution of these variables:
   
-  ``` import matplotlib.pyplot as plt
-  numeric_cols = ['Age', 'Purchase Amount (USD)','Review Rating', 'Previous Purchases']
-plt.figure(figsize=(15,20))
+```python
+import matplotlib.pyplot as plt
+
+# List of numeric columns
+numeric_cols = ['Age', 'Purchase Amount (USD)', 'Review Rating', 'Previous Purchases']
+
+# Set figure size
+plt.figure(figsize=(12, 10))
+
+# Loop through columns and create subplots
 for i, col in enumerate(numeric_cols, 1):
-    plt.subplot(5, 2, i)
+    plt.subplot(2, 2, i)  # 2 rows, 2 columns of subplots
     plt.hist(df[col], bins=20, edgecolor='k', alpha=0.7)
     plt.title(f'Distribution of {col}')
     plt.xlabel(col)
     plt.ylabel('Frequency')
-    plt.tight_layout()
-    plt.show() 
-    ```
+
+# Adjust layout only once after the loop
+plt.tight_layout()
+plt.show()
+```
 
   distribution figure
 
