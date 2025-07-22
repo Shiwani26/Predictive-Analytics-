@@ -43,12 +43,42 @@ print(data.info())
 print(data.describe())
 ```
 
+
+............. figure mean, median
+
 ## Key Insights:
 
 * Age: Average is 44 years (range: 18–70).
 * Purchase Amount: Mean of \$59.76 (range: \$20–\$100).
 * Review Rating: Average is 3.75/5.
 * Previous Purchases: Average of 25, indicating repeat buying behavior.
+
+  Now let's visualize the distribution of these variables:
+  
+  ``` # visualization of the distribution
+import matplotlib.pyplot as plt
+numeric_cols = ['Age', 'Purchase Amount (USD)','Review Rating', 'Previous Purchases']
+plt.figure(figsize=(15,20))
+
+for i, col in enumerate(numeric_cols, 1):
+    plt.subplot(5, 2, i)
+    plt.hist(df[col], bins=20, edgecolor='k', alpha=0.7)
+    plt.title(f'Distribution of {col}')
+    plt.xlabel(col)
+    plt.ylabel('Frequency')
+
+plt.tight_layout()
+plt.show() ```
+
+  ............  distribution figure
+
+## Some Key Observations:
+
+* Age distribution appears relatively even across the dataset, with small peaks in the early 30s and around age 60, suggesting a balanced customer base with slightly more engagement from those age groups.
+* Purchase amount (USD) is fairly uniform but slightly right-skewed, indicating a broad range of spending behaviors, with a small concentration of customers making higher-value purchases near $100.
+* Review ratings are widely spread between 2.5 and 5, with visible peaks around whole number ratings like 3, 4, and 4.5. This suggests mixed customer satisfaction, though the frequent high scores hint at generally favorable experiences.
+* Previous purchases are distributed with variability but show consistent activity across the board, with some customers having made up to 50 purchases, indicating strong return customer behavior in some segments.
+Now, we’ll create segments based on age, gender, and customer satisfaction. First, let’s analyse across different age groups and genders:
 
 ### Age-Based Analysis
 ```
