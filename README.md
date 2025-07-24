@@ -298,7 +298,8 @@ churn_rate = churned.mean() * 100
 * **Churn Rate**: **72%**
 * Indicates that most customers are not expected to return next month.
 
-  ![Alt text](images/Churn rate.PNG)
+![Churn Rate](images/Churn%20rate.PNG)
+
  
 
 ## Conclusion
