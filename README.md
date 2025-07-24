@@ -122,8 +122,8 @@ print(Age_review)
 ```
 
 Customers aged 18–29 are the top spenders, contributing \~\$52,905. Spending is stable from **30–69**, then drops sharply beyond age 70.
+![Average Age](images/Average%20Age.PNG)
 
-![Alt text](images/Average Age.PNG)
 
 ###  Gender-Based Analysis
 ```
