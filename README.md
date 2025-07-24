@@ -47,7 +47,7 @@ print(data.describe())
 ```
 
 
-............. figure mean, median
+![Alt text](images/statistical.PNG)
 
 ## Key Insights:
 
@@ -80,7 +80,8 @@ plt.tight_layout()
 plt.show()
 ```
 
-  distribution figure
+
+![Alt text](images/Distribution.PNG)
 
 ## Some Key Observations:
 
@@ -122,6 +123,8 @@ print(Age_review)
 
 Customers aged 18–29 are the top spenders, contributing \~\$52,905. Spending is stable from **30–69**, then drops sharply beyond age 70.
 
+![Alt text](images/Average Age.PNG)
+
 ###  Gender-Based Analysis
 ```
 import pandas as pd
@@ -161,6 +164,7 @@ female_category_spending = (
 
 print(female_category_spending)
 ```
+![Alt text](images/Gender.PNG)
 
 * Male customers spent \$157,890 vs \$75,191 by females.
 * Both genders prefer Clothing and Accessories.
@@ -235,6 +239,9 @@ nps_score = nps_counts.get('Promoters', 0) - nps_counts.get('Detractors', 0)
 * **NPS Score**: **-1.59**
   This results in an NPS score of -1.59, which indicates extremely low customer satisfaction. This score is a critical indicator that significant improvements are needed in customer service to convert detractors into promoters. Some small improvements in customer experience could turn passives or detractors into promoters.
 
+ ![Alt text](images/pie-chart.PNG)
+ 
+
 ##  Predictive Analytics
 
 ### Feature Engineering:
@@ -290,6 +297,9 @@ churn_rate = churned.mean() * 100
 
 * **Churn Rate**: **72%**
 * Indicates that most customers are not expected to return next month.
+
+ ![Alt text](images/Churn rate.PNG)
+ 
 
 ## Conclusion
 
