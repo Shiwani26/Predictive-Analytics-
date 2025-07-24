@@ -1,5 +1,8 @@
 # Will the Customer Purchase Your Product?  A Predictive Analytics Approach
-![Alt text] (images/Dashboard.PNG)
+
+
+![Alt text](images/Dashboard.PNG)
+
 ## Overview
 
 As a business owner, one of the key priorities is understanding whether customers will purchase your product again, maintain loyalty, and avoid churn. Ultimately, everything revolves around the customer, as they determine the long-term sustainability of the business.
